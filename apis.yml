@@ -1,7 +1,23 @@
 aid: pinshape
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/pinshape.png
 name: Pinshape
-description: Pinshape is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Pinshape is an online marketplace and community for 3D-printable designs, where
+  makers, designers, and hobbyists browse, download, and sell STL and other printable model files
+  for use on desktop 3D printers. The platform hosts both free and premium designs across
+  categories such as toys, gadgets, art, jewelry, and functional parts, and was acquired by
+  desktop 3D-printing manufacturer Formlabs. This profile was surfaced as a venture portfolio lead
+  and enriched through the API Evangelist network; Pinshape publishes no public developer API.
 url: https://raw.githubusercontent.com/api-evangelist/pinshape/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,15 +27,29 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- 3D Printing
+- Marketplace
+- Manufacturing
+- Design
+- Community
+- Maker
+- Additive Manufacturing
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 common:
+- type: DomainSecurity
+  url: security/pinshape-domain-security.yml
 - type: Website
   url: https://pinshape.com
